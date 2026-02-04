@@ -5,8 +5,9 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #242424;
 }
+
 .time-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -14,19 +15,20 @@ body {
     width: 80%;
     max-width: 600px;
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: rgb(45, 45, 45);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .time-slot {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background-color: #e0e7ff;
-    color: #3730a3;
+    background-color: #112d1e;
+    color: #ffffff;
     border-radius: 4px;
     font-weight: bold;
     font-size: 1.1rem;
-    border: 1px solid #c7d2fe;
+    border: 3px solid #3fff72;
 }
