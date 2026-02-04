@@ -8,12 +8,14 @@ Index.html Explanation
 
     <link rel="stylesheet" href="style.css"> links the website to the style.css file.
 
-    <div class="time-grid"> creates a container for the time slots.
+    <div class="main-container"> creates a container for the time slots.
 
     <div class="time-slot"> creates a time slot.
 
     <div class="time-slot">9:00</div> creates a time slot with the text "9:00" in it.
     same to 24:00
+
+    <input type="date" class="date-picker"> creates a date picker.
     
 Style.css Explanation
 
