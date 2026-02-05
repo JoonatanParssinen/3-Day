@@ -64,4 +64,12 @@ script.js Explanation
 Coming soon
 
 </details>
+
+
+
+<details><summary>Funni Dropdown</summary>
+
+https://github.com/user-attachments/assets/87c811d9-abdb-412d-9e5a-21166a619712
+
+</details>
 </p>
