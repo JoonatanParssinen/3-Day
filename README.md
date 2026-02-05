@@ -2,7 +2,7 @@
 <details>
 <summary>Code explanations</summary>
 
-Index.html Explanation
+Index.html Explanation [code](index.html)
 
     First it sets the languange to English with <html lang="en">
 
@@ -23,7 +23,7 @@ Index.html Explanation
 
     <script src="script.js"></script> links the website to the script.js file.
     
-Style.css Explanation
+Style.css Explanation [code](style.css)
 
     In the body it sets the font, centers the content on the page and sets the background color.
 
@@ -33,13 +33,22 @@ Style.css Explanation
 
     in .time-slot it makes the display to a flexbox, centers the content and sets the background color and border.
 
-script.js Explanation
+script.js Explanation [code](script.js)
 
     first it waits for the page to load
     then it selects all the time slots and the modal, the script adds an lisener that waits for a click on the time slots
     when a time slot is clicked it opens the modal
     then when the user clicks outside the modal
     then when the user clicks outside the modal it closes it
+
+    The program retrieves the user-selected day from the datePicker element.
+    After that, the program reads from the browser's localStorage if there are already reservations,
+    if nothing is found in localStorage, an empty array is used.
+
+
+
+
+
 
 </details>
 
