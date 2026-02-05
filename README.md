@@ -30,7 +30,8 @@ Style.css Explanation
     in .time-slot it makes the display to a flexbox, centers the content and sets the background color and border.
 
 script.js Explanation
+
     first it waits for the page to load
     then it selects all the time slots and the modal, the script adds an lisener that waits for a click on the time slots
     when a time slot is clicked it opens the modal
-    then when the user clicks outside the modal it closes it
+    then when the user clicks outside the modal
