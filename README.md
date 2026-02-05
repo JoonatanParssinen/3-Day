@@ -41,6 +41,8 @@ script.js Explanation
     then when the user clicks outside the modal
     then when the user clicks outside the modal it closes it
 
+    [Katso koodi rivillä 25](https://github.com/JoonatanParssinen/3-Day/blob/main/script.js#L25)
+
 </details>
 
 <details><summary>Cool Dropdown #2</summary>
