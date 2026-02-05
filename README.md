@@ -16,6 +16,8 @@ Index.html Explanation
     same to 24:00
 
     <input type="date" class="date-picker"> creates a date picker.
+
+    <script src="script.js"></script> links the website to the script.js file.
     
 Style.css Explanation
 
