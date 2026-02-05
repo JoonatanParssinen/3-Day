@@ -1,3 +1,7 @@
+<p>
+<details>
+<summary>Code explanations</summary>
+
 Index.html Explanation
 
     First it sets the languange to English with <html lang="en">
@@ -36,3 +40,12 @@ script.js Explanation
     when a time slot is clicked it opens the modal
     then when the user clicks outside the modal
     then when the user clicks outside the modal it closes it
+
+</details>
+
+<details><summary>Cool Dropdown #2</summary>
+
+Coming soon
+
+</details>
+</p>
