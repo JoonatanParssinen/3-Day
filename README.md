@@ -69,7 +69,7 @@ Coming soon
 
 <details><summary>Funni Dropdown</summary>
 
-https://github.com/user-attachments/assets/87c811d9-abdb-412d-9e5a-21166a619712
+![soder](https://github.com/user-attachments/assets/aeff229a-49ce-41d2-ab0f-9bfaf93ec03e)
 
 </details>
 </p>
