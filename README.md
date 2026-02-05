@@ -35,3 +35,4 @@ script.js Explanation
     then it selects all the time slots and the modal, the script adds an lisener that waits for a click on the time slots
     when a time slot is clicked it opens the modal
     then when the user clicks outside the modal
+    then when the user clicks outside the modal it closes it
