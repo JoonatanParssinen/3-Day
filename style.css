@@ -77,8 +77,101 @@ body {
 
 .modal-container {
     background-color: rgb(45, 45, 45);
-    width: 300px;
-    height: 200px;
+    width: 800px;
+    height: 600px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.modal-input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+}
+
+.modal-input::placeholder {
+    color: #aaa;
+}
+
+.modal-input:focus {
+    outline: none;
+    border-color: #3fff72;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.time-slot.reserved {
+    background-color: #555;
+    color: #888;
+    border-color: #555;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.submit-btn {
+    padding: 10px;
+    background-color: #3fff72;
+    color: #112d1e;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #32c95b;
+}
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 30px;
+    bottom: 30px;
+    font-size: 17px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-left: 5px solid #3fff72;
+}
+
+.toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }
