@@ -11,6 +11,8 @@ Index.html Explanation
     <title>Time Grid</title> makes the title of the website appears in the browser tab.
 
     <link rel="stylesheet" href="style.css"> links the website to the style.css file.
+	
+	<img class="logo" src="locknkeygreen.png" id="logo"/> adds the site logo
 
     <div class="main-container"> creates a container for the time slots.
 
@@ -33,6 +35,11 @@ Style.css Explanation
 
     in .time-slot it makes the display to a flexbox, centers the content and sets the background color and border.
 
+	in .logo it defines the logo and how it works.
+	the logo will always be on the top-left, and, when hovered over, changes the mouse to have a question mark, and makes it bigger.
+	additionally, if clicked, it will shrink, and play a plushie squish sound, before growing back into regular size.
+	boop the logo, why don't you? XD
+
 script.js Explanation
 
     first it waits for the page to load
@@ -41,6 +48,14 @@ script.js Explanation
     then when the user clicks outside the modal
     then when the user clicks outside the modal it closes it
 
+	also, in the addition of the logo,
+	seeks out the logo and lockSound,
+	and waits for a click
+	when clicked, it will play a sound,
+	trigger an animation,
+	and start a sound cooldown
+	once cooldown is over,
+	the sound may play again on next click
 
 </details>
 
