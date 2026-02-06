@@ -115,3 +115,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+
+
+
+
+// for the logo :3
+document.addEventListener('DOMContentLoaded', () => {
+    const logo = document.getElementById('logo');
+    const sound = document.getElementById('lockSound');
+    let lastSoundTime = 0;
+    const soundCooldown = 1000;
+
+    logo.addEventListener('click', () => {
+        const now = Date.now();
+
+        if (now - lastSoundTime > soundCooldown) {
+            sound.currentTime = 0;
+            sound.play();
+            lastSoundTime = now;
+        }
+
+        logo.classList.add('clicking');
+        logo.addEventListener('animationend', () => {
+            logo.classList.remove('clicking');
+        }, { once: true });
+    });
+});
