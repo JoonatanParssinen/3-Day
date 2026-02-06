@@ -76,8 +76,8 @@ Script.js Explanation [code](script.js)
     
     When you doble click and open the file, it will open in your browser, and you can use it.
 
-    **5. Select a date, and a time slot.**
-    **6. Fill in the form, and click the submit button.**
+    5. Select a date, and a time slot.
+    6. Fill in the form, and click the submit button.
     7. The time slot will be marked as reserved, and the form will be reset.
     8. The reservation will be saved in the browser´s LocalStorage.
     
