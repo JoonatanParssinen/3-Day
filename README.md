@@ -62,9 +62,29 @@ Script.js Explanation [code](script.js)
 
 </details>
 
-<details><summary>Cool Dropdown #2</summary>
+<details><summary>How the program works?</summary>
 
-Coming soon
+    The program works by using the browser's LocalStorage to store the reservations.
+    When the page is loaded, the program checks if there are any reservations in the LocalStorage.
+    If there are, the program will display them in the time grid.
+    If there are no reservations, the program will display an empty time grid.
+
+    1. Download .ZIP file
+    2. Extract the .ZIP file
+    3. Open file explorer, and navigate to the extracted folder
+    4. Double click index.html file
+    
+    When you doble click and open the file, it will open in your browser, and you can use it.
+
+    **5. Select a date, and a time slot.**
+    **6. Fill in the form, and click the submit button.**
+    7. The time slot will be marked as reserved, and the form will be reset.
+    8. The reservation will be saved in the browser´s LocalStorage.
+    
+    If you refresh the page, the reservation will still be there.
+
+    9. If you click the delete button, the reservation will be deleted.
+    10. If you click the logo, it will play a sound.
 
 </details>
 
