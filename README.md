@@ -35,18 +35,12 @@ Style.css Explanation [code](style.css)
 
     in .time-slot it makes the display to a flexbox, centers the content and sets the background color and border.
 
-    in .logo it defines the logo and how it works.
-	the logo will always be on the top-left, and, when hovered over, changes the mouse to have a question mark, and makes it bigger.
-	additionally, if clicked, it will shrink, and play a plushie squish sound, before growing back into regular size.
-	boop the logo, why don't you? XD
-
-
-script.js Explanation [code](script.js)
-
 	in .logo it defines the logo and how it works.
 	the logo will always be on the top-left, and, when hovered over, changes the mouse to have a question mark, and makes it bigger.
 	additionally, if clicked, it will shrink, and play a plushie squish sound, before growing back into regular size.
 	boop the logo, why don't you? XD
+
+Script.js Explanation [code](script.js)
 
     first it waits for the page to load.
     then it selects all the time slots and the modal, the script adds an listener that waits for a click on the time slots.
@@ -54,10 +48,6 @@ script.js Explanation [code](script.js)
     then when the user clicks outside the modal it closes it.
 
 	The program retrieves the user-selected day from the datePicker element.
-    After that, the program reads from the browser's localStorage if there are already reservations,
-    if nothing is found in localStorage, an empty array is used.
-
-    The program retrieves the user-selected day from the datePicker element.
     After that, the program reads from the browser's localStorage if there are already reservations,
     if nothing is found in localStorage, an empty array is used.
 
@@ -69,7 +59,6 @@ script.js Explanation [code](script.js)
 	and start a sound cooldown
 	once cooldown is over,
 	the sound may play again on next click
-
 
 </details>
 
