@@ -23,17 +23,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Update debug info with all bookings
-        debugInfo.innerHTML = bookings.map(b =>
-            `<div style="border-bottom: 1px solid #444; padding: 5px; margin-bottom: 10px;">
-                <strong>Date & Time: ${b.date} ${b.time}</strong><br>
-                Name: ${b['Full Name'] || 'N/A'}<br>
-                Phone: ${b['Phone Number'] || 'N/A'}<br>
-                Email: ${b['Email Address'] || 'N/A'}<br>
-                Players: ${b['Player Amount'] || 'N/A'}<br>
-                Details: ${b['Extra Details?'] || 'N/A'}
+        debugInfo.innerHTML = bookings.map((b, index) =>
+            `<div style="border-bottom: 1px solid #444; padding: 5px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: flex-start;">
+                <div>
+                    <strong>Date & Time: ${b.date} ${b.time}</strong><br>
+                    Name: ${b['Full Name'] || 'N/A'}<br>
+                    Phone: ${b['Phone Number'] || 'N/A'}<br>
+                    Email: ${b['Email Address'] || 'N/A'}<br>
+                    Players: ${b['Player Amount'] || 'N/A'}<br>
+                    Details: ${b['Extra Details?'] || 'N/A'}
+                </div>
+                <button class="delete-btn" data-index="${index}" style="background-color: #ff4444; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; margin-left: 10px;">Delete</button>
             </div>`
         ).join('');
     }
+
+    // Event delegation for delete buttons
+    debugInfo.addEventListener('click', (e) => {
+        if (e.target.classList.contains('delete-btn')) {
+            const index = e.target.getAttribute('data-index');
+            const bookings = JSON.parse(localStorage.getItem('bookings')) || [];
+            bookings.splice(index, 1);
+            localStorage.setItem('bookings', JSON.stringify(bookings));
+            updateGrid();
+        }
+    });
 
     datePicker.addEventListener('change', updateGrid);
     // Initial load
